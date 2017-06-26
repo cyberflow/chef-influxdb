@@ -19,6 +19,7 @@ depends 'nodejs', '>= 2.4.4'
 # For ChefInfluxDB Chef handler
 # https://github.com/jakedavis/chef-handler-influxdb
 depends 'chef_handler'
+depends 'compat_resource'
 
 chef_version '>= 12.5' if respond_to?(:chef_version)
 source_url 'https://github.com/bdangit/chef-influxdb' if respond_to?(:source_url)
